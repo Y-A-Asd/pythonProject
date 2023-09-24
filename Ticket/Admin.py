@@ -8,6 +8,7 @@ class Admin(Users):
         self.password = password
         self.status = Admin.check(self)
 
+
     def check(self):
         if self.password == "admin" and self.username == "admin":
             return True
